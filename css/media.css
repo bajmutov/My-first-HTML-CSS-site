@@ -1,0 +1,62 @@
+/* Верстка виконана щодо трьох точок перелому: 428px, 768px і 1158px */
+
+@media (min-width: 428px) {
+  /* ===============FEATURE - About Company  */
+
+  .container {
+    width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* ===============FEATURE - About Company  */
+
+  .container {
+    width: 768px;
+  }
+
+  .headline {
+    text-align: left;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .feature-item {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .feature-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .feature .text {
+    font-weight: 400;
+  }
+
+  .thumb-icon {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-logo-color);
+    border-radius: 4px;
+  }
+}
