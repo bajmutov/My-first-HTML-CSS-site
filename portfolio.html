@@ -19,12 +19,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!--? Header -->
     <header class="header">
       <div class="container header-container">
-        <!-- Навигация сайта -->
         <nav class="navigation">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-letter">Studio</span></a
@@ -32,7 +32,9 @@
 
           <ul class="menu list">
             <li class="menu-item">
-              <a class="menu-link link subtitle" href="./index.html">Studio</a>
+              <a class="menu-link link subtitle " href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link subtitle current" href="./portfolio.html"
@@ -45,9 +47,8 @@
           </ul>
         </nav>
 
-        <!-- Adress -->
         <address class="adress link">
-          <ul class="adress-list list">
+          <ul class="adress-list">
             <li class="adress-item">
               <a
                 class="adress-link link contact"
@@ -62,7 +63,92 @@
             </li>
           </ul>
         </address>
-      </div>
+ <!-- Mobile menu -->
+        <button type="button" class="menu-toggle js-open-menu" 
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="burger" width="32" height="32">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        </button>
+
+                 <div class="menu-container js-menu-container">
+            <button class="mobile-close-btn js-close-menu" >
+                   <svg class="icon-close-btn" width="8" height="8">
+                     <use href="./images/icons.svg#close-black"></use>
+                   </svg>
+                 </button>
+                 <nav class="mobile-navigation">
+                         <ul class="mobile-menu list">
+                    <li class="mobile-menu-item">
+                      <a class="mobile-menu-link link subtitle" href="./index.html"
+                        >Studio</a
+                      >
+                    </li>
+                    <li class="mobile-menu-item">
+                      <a class="mobile-menu-link link subtitle  current-order" href="./portfolio.html"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li class="mobile-menu-item">
+                      <a class="mobile-menu-link link subtitle" href="">Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
+        
+                <div class="mobile-menu-flex">
+                  <address class="mobile-adress link">
+                    <ul class="mobile-adress-list">
+                      <li class="mobile-adress-item">
+                        <a class="mobile-phone-link link contact" href="tel:+38(097)1234567"
+                          >+38(097)1234567</a
+                        >
+                      </li>
+                      <li class="mobile-adress-item">
+                        <a
+                          class="mobile-mail-link link contact"
+                          href="mailto:info@devstudio.com"
+                          >bajmutov@gmail.com</a
+                        >
+                      </li>
+                    
+                    </ul>
+                    <ul class="mobile-social-list">
+                      <li class="social-list-item">
+                        <a href="" class="social-employee-link link">
+                          <svg class="company-icon" width="16" height="16">
+                            <use href="./images/icons.svg#instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list-item">
+                        <a href="" class="social-employee-link link">
+                          <svg class="company-icon" width="16" height="16">
+                            <use href="./images/icons.svg#twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list-item">
+                        <a href="" class="social-employee-link link">
+                          <svg class="company-icon" width="16" height="16">
+                            <use href="./images/icons.svg#facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list-item">
+                        <a href="" class="social-employee-link link">
+                          <svg class="company-icon" width="16" height="16">
+                            <use href="./images/icons.svg#linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+               
+              </div>
+        
+       </div>
     </header>
     <main>
       <!-- Filters -->
@@ -88,9 +174,7 @@
             </li>
           </ul>
 
-          <!-- Portfolio -->
-
-          <ul class="portfolio-list">
+            <ul class="portfolio-list">
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="cover-wrap-cards">
@@ -105,7 +189,7 @@
                   <p class="cover-text text">Go It</p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">
+                  <h2 class="portfolio-headline">
                     Banking App Interface Concept
                   </h2>
                   <p class="text">App</p>
@@ -142,7 +226,7 @@
                   </p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">Cashless Payment</h2>
+                  <h2 class="portfolio-headline">Cashless Payment</h2>
                   <p class="text">Marketing</p>
                 </div>
               </a>
@@ -167,7 +251,7 @@
                   </p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">Meditation App</h2>
+                  <h2 class="portfolio-headline">Meditation App</h2>
                   <p class="text">App</p>
                 </div>
               </a>
@@ -189,7 +273,7 @@
                   </p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">Taxi Service</h2>
+                  <h2 class="portfolio-headline">Taxi Service</h2>
                   <p class="text">Marketing</p>
                 </div>
               </a>
@@ -218,7 +302,7 @@
                   </p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">Screen Illustrations</h2>
+                  <h2 class="portfolio-headline">Screen Illustrations</h2>
                   <p class="text">Design</p>
                 </div>
               </a>
@@ -237,7 +321,7 @@
                   <p class="cover-text text">Go It</p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">Online Courses</h2>
+                  <h2 class="portfolio-headline">Online Courses</h2>
                   <p class="text">Marketing</p>
                 </div>
               </a>
@@ -255,7 +339,7 @@
                   <p class="cover-text text">Go It</p>
                 </div>
                 <div class="img-border">
-                  <h2 class="headline subtitle">Instagram Stories Concept</h2>
+                  <h2 class="portfolio-headline">Instagram Stories Concept</h2>
                   <p class="text">Design</p>
                 </div>
               </a>
@@ -275,7 +359,7 @@
                 </div>
 
                 <div class="img-border">
-                  <h2 class="headline subtitle">Organic Food</h2>
+                  <h2 class="portfolio-headline">Organic Food</h2>
                   <p class="text">Web Site</p>
                 </div>
               </a>
@@ -310,7 +394,7 @@
                 </div>
 
                 <div class="img-border">
-                  <h2 class="headline subtitle">Fresh Coffee</h2>
+                  <h2 class="portfolio-headline">Fresh Coffee</h2>
                   <p class="text">Web Site</p>
                 </div>
               </a>
@@ -385,6 +469,14 @@
                                </form>
         </div>
       </div>
+
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>

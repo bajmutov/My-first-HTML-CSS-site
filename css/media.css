@@ -1,20 +1,107 @@
 /* Верстка виконана щодо трьох точок перелому: 428px, 768px і 1158px */
+@media screen and (max-width: 427px) {
 
-@media (min-width: 428px) {
+}
+
+@media screen and (min-width: 428px) {
   /* ===============FEATURE - About Company  */
 
   .container {
     width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+    }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+/* Header */
+
+.header-container {
+  padding: 0px 16px;
+}
+
+.burger {
+  display: none;
+ }
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.adress {
+  display: block;
+  margin-left: auto;
+}
+
+.navigation .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--hover-color);
+}
+
+.menu-link {
+  position: relative;
+}
+
+.menu-link.current::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  left: 0px;
+  bottom: -1px;
+  border-radius: 2px;
+  background-color: var(--border-icon-hover);
+}
+
+.adress-link {
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container {
+  display: none;
+}
+  /* Hero */
+
+  .hero-title {
+    font-size: 56px;
+     line-height: calc(60 / 56);
+      max-width: 496px;
+      margin-bottom: 36px;
+    }
+
+
   /* ===============FEATURE - About Company  */
 
   .container {
     width: 768px;
+  }
+
+  .employees-container {
+    padding-right: 108px;
+    padding-left: 108px;
   }
 
   .headline {
@@ -28,13 +115,155 @@
     column-gap: 24px;
   }
 
-  .feature-item {
+   .feature-item {
     margin-bottom: 0;
     flex-basis: calc((100% - 24px) / 2);
   }
+
+
+  /*======= Section 3 - Our team ======*/
+.employees-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 24px;
 }
 
-@media (min-width: 1158px) {
+.employees-item {
+  margin-bottom: 0;
+  flex-basis: calc((100% - 24px) / 2);
+}
+
+
+/*TODO <!-- Section 4 - Clients--> */
+.clients-container {
+padding-right: 108px;
+padding-left: 108px;
+}
+
+.clients-list {
+  column-gap: 24px;
+}
+
+.clients-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+  max-width: 168px;
+} 
+
+/* Footer */
+.footer-container {
+  padding-right: 108px;
+  padding-left: 108px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.footer-logo {
+  /* margin-right: 120px; */
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+   }
+
+.footer .logo {
+display: block;
+margin-bottom: 16px;
+text-align: left;
+}
+
+.footer-text {
+max-width: 268px;
+text-align: left;
+margin-left: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-email {
+    margin-bottom: 0;
+    min-width: 264px;
+     }
+
+     .footer-icon-wrap {
+      /* display: block; */
+        margin-top: 0;
+        margin-left: 24px;
+      }
+
+    
+  .form-footer {
+display: flex;
+align-items: start;
+  }
+
+  /*todo <!-- BackDrop --> */
+.modal {
+  width: 408px;
+}
+
+/* Portfolio */
+
+.filters-list {
+  margin-bottom: 64px;
+  justify-content: center;
+  }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-item {
+  margin-bottom: 0;
+  flex-basis: calc((100% - 24px) / 2);
+ }
+
+ .portfolio-img {
+   width: 356px;
+  height: 300px;
+}
+
+}
+
+/*======================================================== */
+@media screen and (min-width: 1158px) {
+
+  /* Header */
+
+  .adress-list {
+    display: flex;
+  }
+
+  .adress-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+  /* Hero */
+
+  .hero-title {
+        margin-bottom: 48px;
+    }
+
+/*! ================Section 2 - What are we doing */
+
+.project > .container {
+  display: block;
+}
+
+.project-list {
+  display: flex;
+}
+.project-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+   /* ===============FEATURE - About Company  */
   .container {
     width: 1158px;
     padding-left: 15px;
@@ -59,4 +288,49 @@
     background-color: var(--light-logo-color);
     border-radius: 4px;
   }
+
+  /*======= Section 3 - Our team ======*/
+ 
+  .employees-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  /*TODO <!-- Section 4 - Clients--> */
+      
+  .clients-list-item {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+  } 
+
+  /*? ==================================FOOTER=========== */
+  .footer-logo {
+    margin-right: 120px;
+       }
+
+       .subscribe-wrap {
+  margin-left: 80px;
+}
+
+.footer-text {
+  max-width: 264px;
+    }
+
+.footer-container {
+  column-gap: 0;
+}
+
+/* Portfolio */
+
+.filters-list {
+  margin-bottom: 72px;
+  }
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+ }
+
+ .portfolio-img {
+  width: 360px;
+ height: 300px;
+}
+
 }
