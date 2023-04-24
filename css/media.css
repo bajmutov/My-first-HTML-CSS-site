@@ -1,6 +1,6 @@
 /* Верстка виконана щодо трьох точок перелому: 428px, 768px і 1158px */
-@media screen and (max-width: 427px) {
-}
+
+/*todo =========================== 427 px =================== */
 
 @media screen and (min-width: 428px) {
   /* ===============FEATURE - About Company  */
@@ -14,6 +14,8 @@
     gap: 24px;
   }
 }
+
+/*? =========================== 768 px =================== */
 
 @media screen and (min-width: 768px) {
   /* Header */
@@ -123,6 +125,7 @@
   }
 
   /*======= Section 3 - Our team ======*/
+
   .employees-list {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +138,7 @@
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  /*TODO <!-- Section 4 - Clients--> */
+  /* <!-- Section 4 - Clients--> */
   .clients-container {
     padding-right: 108px;
     padding-left: 108px;
@@ -189,7 +192,6 @@
   }
 
   .footer-icon-wrap {
-    /* display: block; */
     margin-top: 0;
     margin-left: 24px;
   }
@@ -199,7 +201,8 @@
     align-items: start;
   }
 
-  /*todo <!-- BackDrop --> */
+  /* <!-- BackDrop --> */
+
   .modal {
     width: 408px;
   }
@@ -229,7 +232,8 @@
   }
 }
 
-/*======================================================== */
+/*todo =========================== 1158 px =================== */
+
 @media screen and (min-width: 1158px) {
   /* Header */
 
@@ -252,7 +256,7 @@
     margin-bottom: 48px;
   }
 
-  /*! ================Section 2 - What are we doing */
+  /* ================Section 2 - What are we doing */
 
   .project {
     display: block;
@@ -266,6 +270,7 @@
   }
 
   /* ===============FEATURE - About Company  */
+
   .container {
     width: 1158px;
     padding-left: 15px;
@@ -307,13 +312,14 @@
     flex-basis: calc((100% - 72px) / 4);
   }
 
-  /*TODO <!-- Section 4 - Clients--> */
+  /* <!-- Section 4 - Clients--> */
 
   .clients-list-item {
     flex-basis: calc((100% - 5 * 24px) / 6);
   }
 
-  /*? ==================================FOOTER=========== */
+  /* ==================================FOOTER=========== */
+
   .footer-logo {
     margin-right: 120px;
   }
@@ -346,7 +352,8 @@
   }
 }
 
-/* Picture, images */
+/*! ============= Picture, images ==========================*/
+
 /* Hero background */
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
