@@ -1,1 +1,1 @@
-# goit-markup-hw-07 forms
+# goit-markup-hw-07 Adaptive
