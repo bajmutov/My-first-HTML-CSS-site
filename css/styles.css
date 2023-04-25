@@ -366,6 +366,10 @@ body {
   margin-bottom: 72px;
 }
 
+.employees-title {
+  margin-top: 32px;
+}
+
 .employees {
   background-color: var(--secondary-bgc-color);
   margin: 0 auto;
