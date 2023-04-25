@@ -226,8 +226,6 @@ body {
 
 .mobile-social-list {
   display: flex;
-  justify-content: space-between;
-  margin-top: 48px;
 }
 
 .mobile-menu-item {
